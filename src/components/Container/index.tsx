@@ -32,6 +32,14 @@ const Container = () => {
 
   const siteType = useSiteConfig();
   const { checkQuickResult } = useQuickSearch();
+  const quickSearchClosed = GM_getValue<boolean>(
+    'easy-upload.quick-search-closed',
+    false,
+  );
+  const quickTransferClosed = GM_getValue<boolean>(
+    'easy-upload.quick-transfer-closed',
+    false,
+  );
 
   const handleSearchClick = () => {
     checkQuickResult();
@@ -39,7 +47,7 @@ const Container = () => {
 
   const TitleBar = () => (
     <h4>
-      {$t('一键转种')}
+      {!quickTransferClosed && $t('一键转种')}
       <Toaster position="top-right" richColors />
       <span id="easy-upload-setting" className="easy-upload-setting-btn" />
       <ConfigSvg
@@ -51,16 +59,12 @@ const Container = () => {
 
   const LayoutComponent =
     SiteLayouts[siteType as keyof typeof SiteLayouts] || SiteLayouts.NexusPHP;
-  const quickSearchClosed = GM_getValue<boolean>(
-    'easy-upload.quick-search-closed',
-    false,
-  );
   return (
     <>
       <LayoutComponent quickSearchClosed={quickSearchClosed}>
         {{
           title: <TitleBar />,
-          upload: <UploadSiteList />,
+          upload: quickTransferClosed ? <></> : <UploadSiteList />,
           functions: <FunctionList />,
           search: <SearchList />,
           onSearchClick: handleSearchClick,
