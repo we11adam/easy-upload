@@ -1,3 +1,10 @@
+## [7.0.8](https://github.com/techmovie/easy-upload/compare/7.0.7...7.0.8) (2026-05-14)
+
+
+### Features
+
+* add disable quick transfer setting ([#398](https://github.com/techmovie/easy-upload/issues/398)) ([5a6d282](https://github.com/techmovie/easy-upload/commit/5a6d282d16af1591fb526263c618c18153532d5e))
+
 ## [7.0.7](https://github.com/techmovie/easy-upload/compare/7.0.6...7.0.7) (2026-04-15)
 
 

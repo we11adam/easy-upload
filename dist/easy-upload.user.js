@@ -2,7 +2,7 @@
 // @name            EasyUpload PT一键转种
 // @name:en         EasyUpload - Trackers Transfer Tool
 // @namespace       https://github.com/techmovie/easy-upload
-// @version         7.0.7
+// @version         7.0.8
 // @author          birdplane
 // @description     一键转种，支持PT站点之间的种子转移。
 // @description:en  Transfer torrents between trackers with one click.
@@ -9182,6 +9182,7 @@
     "批量检索": "Batch search",
     "同时打开多个搜索标签页": "Open multiple search tabs simultaneously",
     "豆瓣配置": "Douban configuration",
+    "关闭一键转种": "Disable quick transfer",
     "关闭快速检索": "Disable quick search",
     "种子文件下载失败": "Torrent file download failed",
     "请手动下载": "Please download manually",
@@ -9244,6 +9245,7 @@
     "批量检索": "일괄 검색",
     "同时打开多个搜索标签页": "여러 검색 탭 동시에 열기",
     "豆瓣配置": "더우반 구성",
+    "关闭一键转种": "빠른 전송 비활성화",
     "关闭快速检索": "빠른검색 비활성화",
     "种子文件下载失败": "토렌트 파일 다운로드 실패",
     "请手动下载": "수동으로 다운로드해주세요",
@@ -30979,6 +30981,12 @@ ${screenBBcodeArray.join("")}`
   ];
   const FeatureSwitchList = [
     {
+      name: "quick-transfer-closed",
+      des: "关闭一键转种",
+      type: "checkbox",
+      key: "quickTransferClosed"
+    },
+    {
       name: "quick-search-closed",
       des: "关闭快速检索",
       type: "checkbox",
@@ -31355,11 +31363,19 @@ ${screenBBcodeArray.join("")}`
     const [settingPanelOpen, setSettingPanelOpen] = d(false);
     const siteType = useSiteConfig();
     const { checkQuickResult } = useQuickSearch();
+    const quickSearchClosed = GM_getValue(
+      "easy-upload.quick-search-closed",
+      false
+    );
+    const quickTransferClosed = GM_getValue(
+      "easy-upload.quick-transfer-closed",
+      false
+    );
     const handleSearchClick = () => {
       checkQuickResult();
     };
     const TitleBar = () => /* @__PURE__ */ u$1("h4", { children: [
-      $t("一键转种"),
+      !quickTransferClosed && $t("一键转种"),
       /* @__PURE__ */ u$1($e, { position: "top-right", richColors: true }),
       /* @__PURE__ */ u$1("span", { id: "easy-upload-setting", className: "easy-upload-setting-btn" }),
       /* @__PURE__ */ u$1(
@@ -31371,14 +31387,10 @@ ${screenBBcodeArray.join("")}`
       )
     ] });
     const LayoutComponent = SiteLayouts[siteType] || SiteLayouts.NexusPHP;
-    const quickSearchClosed = GM_getValue(
-      "easy-upload.quick-search-closed",
-      false
-    );
     return /* @__PURE__ */ u$1(preact.Fragment, { children: [
       /* @__PURE__ */ u$1(LayoutComponent, { quickSearchClosed, children: {
         title: /* @__PURE__ */ u$1(TitleBar, {}),
-        upload: /* @__PURE__ */ u$1(UploadSiteList, {}),
+        upload: quickTransferClosed ? /* @__PURE__ */ u$1(preact.Fragment, {}) : /* @__PURE__ */ u$1(UploadSiteList, {}),
         functions: /* @__PURE__ */ u$1(FunctionList, {}),
         search: /* @__PURE__ */ u$1(SearchList, {}),
         onSearchClick: handleSearchClick
