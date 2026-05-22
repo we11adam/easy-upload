@@ -2,7 +2,7 @@
 // @name            EasyUpload PT一键转种
 // @name:en         EasyUpload - Trackers Transfer Tool
 // @namespace       https://github.com/techmovie/easy-upload
-// @version         7.0.9
+// @version         7.0.10
 // @author          birdplane
 // @description     一键转种，支持PT站点之间的种子转移。
 // @description:en  Transfer torrents between trackers with one click.
@@ -8548,6 +8548,7 @@
       url: "https://www.yemapt.org",
       host: "www1?.yemapt.org",
       siteType: "YemaPT",
+      icon: "data:image/png;base64,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",
       asSource: false,
       asTarget: true,
       uploadPath: "/#/torrent/add",
@@ -8595,37 +8596,41 @@
       videoType: {
         selector: "#medium",
         map: {
-          uhdbluray: "Blu-rayUHD",
-          bluray: "Blu-ray",
+          uhdbluray: "Blu-ray UHD (4K Complete)",
+          bluray: "Blu-ray (1080p Complete)",
           remux: "Remux",
-          encode: "Encode",
-          hdtv: "HDTV/TV",
-          web: "Web-dl",
-          dvd: "DVD",
-          dvdrip: "DVDrip"
+          encode: "Rip/Encode",
+          hdtv: "HDTV/TV Cap",
+          web: "Web-DL/WebRip",
+          dvd: "DVD (Complete/ISO)",
+          dvdrip: "DVDrip",
+          music: "Audio CD/Vinyl"
         }
       },
       videoCodec: {
         selector: "#codec",
         map: {
-          h264: "H.264(x264/AVC)",
-          x264: "H.264(x264/AVC)",
-          hevc: "H.265(x265/HEVC)",
-          h265: "H.265(x265/HEVC)",
-          x265: "H.265(x265/HEVC)",
-          vc1: "Bluray(VC1)",
-          xvid: "Xvid",
-          mpeg2: "MPEG-2",
-          av1: "AV1"
+          h264: "H.264/AVC",
+          x264: "H.264/AVC",
+          hevc: "H.265/HEVC",
+          h265: "H.265/HEVC",
+          x265: "H.265/HEVC",
+          vc1: "VC-1(Blu-ray)",
+          xvid: "Xvid/DivX",
+          divx: "Xvid/DivX",
+          mpeg2: "MPEG-2(Blu-ray/DVD)",
+          av1: "AV1",
+          vp9: "VP9",
+          vvc: "H.266/VVC"
         }
       },
       audioCodec: {
         selector: "#audiocodec",
         map: {
           aac: "AAC",
-          ac3: "AC3(DD)",
-          dd: "AC3(DD)",
-          "dd+": "E-AC3(DDP)",
+          ac3: "AC3 (Dolby Digital)",
+          dd: "AC3 (Dolby Digital)",
+          "dd+": "E-AC3 (Dolby Digital Plus)",
           flac: "FLAC",
           dts: "DTS",
           truehd: "TrueHD",
@@ -8634,17 +8639,22 @@
           atmos: "TrueHD Atmos",
           dtsx: "DTS-HD MA",
           ape: "APE",
-          wav: "WAV",
-          mp3: "MP3"
+          wav: "Other",
+          mp3: "MP3",
+          ogg: "OGG",
+          opus: "Opus"
         }
       },
       resolution: {
         selector: "#standard",
         map: {
-          "2160p": "2160p/4K",
+          "4320p": "8K",
+          "2160p": "4K/2160p",
+          "1440p": "2K/1440p",
           "1080p": "1080p",
           "1080i": "1080i",
           "720p": "720p",
+          "720i": "720i",
           "576p": "SD",
           "480p": "SD"
         }
@@ -16340,6 +16350,86 @@ $1`
     }
   }
   registry$1.register(new MTV());
+  const prepareYemaPTDescription = (info) => {
+    var _a2;
+    let description = filterEmptyTags(info.description || "").replace(/^\s+/, "");
+    (_a2 = info.mediaInfos) == null ? void 0 : _a2.forEach((mediaInfo) => {
+      description = description.replace(mediaInfo.trim(), "");
+    });
+    description = description.replace(
+      /\[(mediainfo|bdinfo)\][\s\S]*?\[\/\1\]/gi,
+      ""
+    );
+    return filterEmptyTags(description).trim();
+  };
+  const getYemaPTSeason = (title) => {
+    var _a2, _b, _c;
+    const season = ((_a2 = title.match(/\bS(?:eason)?\.?\s*0*(\d{1,3})(?:\b|E\d+)/i)) == null ? void 0 : _a2[1]) || ((_b = title.match(/\bSeason\s+0*(\d{1,3})\b/i)) == null ? void 0 : _b[1]) || ((_c = title.match(/第\s*0*(\d{1,3})\s*季/)) == null ? void 0 : _c[1]);
+    if (!season) return null;
+    const seasonNumber = parseInt(season, 10);
+    return Number.isFinite(seasonNumber) && seasonNumber > 0 ? seasonNumber : null;
+  };
+  const convertQuoteToMarkdown = (quote, title = "") => {
+    const normalized = quote.trim();
+    if (!normalized) return "";
+    const quoteTitle = title.trim() ? `**${title.trim()}**
+` : "";
+    return `${quoteTitle}${normalized}`.split("\n").map((line) => `> ${line}`).join("\n");
+  };
+  const convertFenceToMarkdown = (content) => {
+    return `
+\`\`\`text
+${content.trim()}
+\`\`\`
+`;
+  };
+  const bbcodeToMarkdown = (text2) => {
+    return (text2 || "").replace(/\r\n?/g, "\n").replace(/\[(?:size|font|color)=[^\]]*?\]/gi, "").replace(/\[\/(?:size|font|color)\]/gi, "").replace(/\[(?:left|right|center|align=[^\]]*?)\]/gi, "").replace(/\[\/(?:left|right|center|align)\]/gi, "").replace(/\[hr\]/gi, "\n---\n").replace(/\[img(?:=[^\]]*?)?\]([\s\S]*?)\[\/img\]/gi, (_match, url) => {
+      const imageUrl = url.trim();
+      return imageUrl ? `![](${imageUrl})` : "";
+    }).replace(/\[url=([^\]]*?)\]([\s\S]*?)\[\/url\]/gi, (_match, url, label) => {
+      const href = url.trim();
+      const textLabel = label.trim();
+      return textLabel ? `[${textLabel}](${href})` : href;
+    }).replace(/\[url\]([\s\S]*?)\[\/url\]/gi, (_match, url) => {
+      const href = url.trim();
+      return href ? `[${href}](${href})` : "";
+    }).replace(/\[(?:b|strong)\]\s*([\s\S]*?)\s*\[\/(?:b|strong)\]/gi, "**$1**").replace(/\[(?:i|em)\]\s*([\s\S]*?)\s*\[\/(?:i|em)\]/gi, "*$1*").replace(/\[s\]\s*([\s\S]*?)\s*\[\/s\]/gi, "~~$1~~").replace(/\[u\]\s*([\s\S]*?)\s*\[\/u\]/gi, "$1").replace(
+      /\[(code|pre|mediainfo|bdinfo)\]([\s\S]*?)\[\/\1\]/gi,
+      (_match, _tag, code2) => convertFenceToMarkdown(code2)
+    ).replace(
+      /\[quote=([^\]]*?)\]([\s\S]*?)\[\/quote\]/gi,
+      (_match, title, quote) => `${convertQuoteToMarkdown(quote, title)}
+`
+    ).replace(
+      /\[quote\]([\s\S]*?)\[\/quote\]/gi,
+      (_match, quote) => `${convertQuoteToMarkdown(quote)}
+`
+    ).replace(
+      /\[(?:hide|spoiler|box)(?:=([^\]]*?))?\]([\s\S]*?)\[\/(?:hide|spoiler|box)\]/gi,
+      (_match, title, content) => {
+        const heading = (title == null ? void 0 : title.trim()) ? `**${title.trim()}**
+
+` : "";
+        return `
+${heading}${content.trim()}
+`;
+      }
+    ).replace(
+      /\[comparison(?:=([^\]]*?))?\]([\s\S]*?)\[\/comparison\]/gi,
+      (_match, title, content) => {
+        const heading = (title == null ? void 0 : title.trim()) ? `**${title.trim()}**
+
+` : "";
+        return `
+${heading}${content.trim()}
+`;
+      }
+    ).replace(
+      /\[list(?:=[^\]]*?)?\]([\s\S]*?)\[\/list\]/gi,
+      (_match, list) => list.replace(/\[\*\]\s*/g, "\n- ").trim()
+    ).replace(/^\[\*\]\s*/gm, "- ").replace(/\[\/?\w+(?:=[^\]]*?)?\]/g, "").replace(/[ \t]+\n/g, "\n").replace(/\n{3,}/g, "\n\n").trim();
+  };
   class YemaPT extends BaseFiller {
     constructor() {
       super(...arguments);
@@ -16403,7 +16493,7 @@ $1`
       const fields = {
         showName: info.title,
         shortDesc: info.subtitle || "",
-        longDesc: this.bbcodeToMarkdown(info.description)
+        longDesc: bbcodeToMarkdown(prepareYemaPTDescription(info))
       };
       const picture = this.getPoster();
       if (picture) fields.picture = picture;
@@ -16413,6 +16503,8 @@ $1`
       if (imdbId) fields.imdb = imdbId;
       const mediaInfo = (_c = info.mediaInfos) == null ? void 0 : _c[0];
       if (mediaInfo) fields.mediaInfo = mediaInfo;
+      const season = getYemaPTSeason(info.title);
+      if (season) fields.season = season;
       return fields;
     }
     getPoster() {
@@ -16420,13 +16512,6 @@ $1`
       const { poster, description } = this.info;
       if (poster) return poster;
       return ((_b = (_a2 = description.match(/\[img\]([^[]+?)\[\/img\]/i)) == null ? void 0 : _a2[1]) == null ? void 0 : _b.trim()) || "";
-    }
-    bbcodeToMarkdown(text2) {
-      return text2.replace(/\[size=\d\]/gi, "").replace(/\[\/size\]/gi, "").replace(/\[font=.+?\]/gi, "").replace(/\[\/font\]/gi, "").replace(/\[color=.+?\]/gi, "").replace(/\[\/color\]/gi, "").replace(/\[img\](.*?)\[\/img\]/gi, "![_]($1)").replace(/\[b\]\s*/gi, "**").replace(/\s*\[\/b\]/gi, "**").replace(/\[i\]\s*/gi, "*").replace(/\s*\[\/i\]/gi, "*").replace(/\[url=([^\]]*?)\](.*?)\[\/url\]/gi, "[$2]($1)").replace(/\[quote\]([\s\S]*?)\[\/quote\]/gi, (_match, quote) => {
-        return `> ${quote.split("\n").join("\n> ")}
-
-`;
-      });
     }
     fillTorrentFileByForm(setFieldsValue) {
       const { torrentData, title } = this.info;
@@ -16483,8 +16568,14 @@ $1`
     getAudioCodec() {
       var _a2, _b;
       const { audioCodec = "", title } = this.info;
-      if (/^(ac3|dd|\+?dd)$/i.test(audioCodec) && /DDP|DD\+/i.test(title)) {
-        return /Atmos/i.test(title) ? "E-AC3 Atmos" : "E-AC3(DDP)";
+      if (/^(atmos)$/i.test(audioCodec)) {
+        return /DDP|DD\+|E-?AC-?3/i.test(title) ? "E-AC3 Atmos" : "TrueHD Atmos";
+      }
+      if (/^truehd$/i.test(audioCodec) && /Atmos/i.test(title)) {
+        return "TrueHD Atmos";
+      }
+      if (/^(ac3|dd|dd\+)$/i.test(audioCodec) && /DDP|DD\+/i.test(title)) {
+        return /Atmos/i.test(title) ? "E-AC3 Atmos" : "E-AC3 (Dolby Digital Plus)";
       }
       return ((_b = (_a2 = this.siteInfo.audioCodec) == null ? void 0 : _a2.map) == null ? void 0 : _b[audioCodec]) || "Other";
     }
@@ -16497,10 +16588,7 @@ $1`
         JP: "JP(日本)",
         KR: "KR(韩国)",
         US: "US(美国)",
-        EU: "EU(欧洲)",
-        UK: "UK(英国)",
-        CA: "CA(加拿大)",
-        AU: "AU(澳大利亚)"
+        EU: "EU(欧洲)"
       };
       return area && areaMap[area] ? [areaMap[area]] : ["Other"];
     }
@@ -16516,9 +16604,14 @@ $1`
       if (tags2.chinese_audio) result.push("国语");
       if (tags2.chinese_subtitle) result.push("中字");
       if (tags2.cantonese_audio) result.push("粤语");
-      if (tags2.hdr10 || tags2.hdr10_plus) result.push("HDR10");
+      if (tags2.hdr10) result.push("HDR10");
+      if (tags2.hdr10_plus) result.push("HDR10+");
       if (tags2.dolby_vision) result.push("杜比视界");
-      if (/E\d+/i.test(title)) result.push("分集");
+      if (tags2.dolby_atmos) result.push("杜比全景声(Atmos)");
+      if (tags2.dts_x) result.push("DTS-X");
+      if (tags2.diy) result.push("DIY");
+      if (tags2.exclusive) result.push("首发");
+      if (/E\d+/i.test(title)) result.push("连载中");
       if (/complete|S\d{2}(?!E\d{2})/i.test(title)) result.push("完结");
       return result;
     }

@@ -1,3 +1,10 @@
+## [7.0.10](https://github.com/techmovie/easy-upload/compare/7.0.9...7.0.10) (2026-05-22)
+
+
+### Bug Fixes
+
+* 完善 YemaPT 转种支持 ([#404](https://github.com/techmovie/easy-upload/issues/404)) ([2618eba](https://github.com/techmovie/easy-upload/commit/2618eba39f11218a74fe6f94a620f9cc7704c695))
+
 ## [7.0.9](https://github.com/techmovie/easy-upload/compare/7.0.8...7.0.9) (2026-05-21)
 
 
